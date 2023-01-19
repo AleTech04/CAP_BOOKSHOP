@@ -1,0 +1,17 @@
+###
+GET http://localhost:4004/catalog/Authors?$expand=books
+
+###
+GET http://localhost:4004/catalog/Books
+
+###
+POST http://localhost:4004/catalog/Authors
+Content-Type: application/json
+
+{"ID": 478, "name": "Ale Chef"}
+
+###
+POST http://localhost:4004/catalog/Books
+Content-Type: application/json
+
+{"ID": 579, "title": "Spammare con cura", "stock": 10, "author_ID":478}

@@ -1,0 +1,16 @@
+GET http://localhost:4004/catalog/Books
+
+###
+POST http://localhost:4004/catalog/Orders
+Content-Type: application/json
+
+{"book_ID": 421, "quantity": 0}
+
+###
+#
+# Order a Book
+#
+POST http://localhost:4004/catalog/Orders
+Content-Type: application/json
+
+{"book_ID": 579, "quantity": 156}
